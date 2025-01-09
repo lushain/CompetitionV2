@@ -1,0 +1,234 @@
+section{
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+
+section{
+  text-align: center;
+  position: relative;
+}
+
+section p{
+  width: 60vw;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+z-index: -200;
+}
+
+nav{
+  position: fixed;
+  left: 0px;
+  width: 10vw;
+  height: max-content;
+  top: 30%;
+  margin-left: 15px;
+  z-index: 2;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  grid-gap: 65px;
+}
+
+nav li{
+  height: 5px;
+  /* width: 60px; */
+  width: 40px;
+  background-color: white;
+  border-radius: 2px;
+}
+.scroll-icon{
+  cursor: pointer;
+  transition: 100ms;
+}
+
+#home p{
+  color: var(--theme);
+  font-size: 1.4rem;
+  /* transform: translateX(700px); */
+}
+.content{
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+#home div{
+  gap: 0px;
+}
+
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 4rem;
+  /* transform: translateX(700px); */
+}
+.learn-more {
+  position: relative;
+  border: 0.25em solid var(--theme);
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  padding: 1em 2em;
+  margin: 1em 0px;
+  border-radius: 2em;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 100ms;
+}
+
+.learn-more:hover{
+  background-color: var(--theme);
+  margin: 0.95em 0px 1em 0px;
+}
+
+/* #about img{
+  width: 22vw;
+  top: 23%;
+  right: 21%;
+} */
+#about img{
+  width:22vw;
+  top: 30%;
+  right: 17%;
+  transform: scale(0.7)
+}
+/* section img{
+  width: 40vw;
+  top: 32%;
+  right: 18%;
+} */
+
+.back-box{
+  /* box-shadow: 30px 15px var(--theme); */
+  position: relative;
+  z-index: -1;
+  width: 40vw;
+  top: 45%;
+  right: 13%;
+  transform: scale(0.7);
+}
+header img{
+  position: relative;
+  width: 145%;
+  top: 2%;
+  left: -30vw !important;
+  z-index: -100;
+  right: 30vw;
+}
+/* #planets{
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 20%;
+} */
+
+#see-my-location-button{
+  bottom: 3%;
+  position: absolute;
+  left: 19%;
+  z-index: 10;
+}
+
+#see-my-location-button[disabled] {
+  background-color: #444;
+  cursor: default;
+}
+
+#see-my-location-button.error {
+  background-color: #C62828;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+canvas{
+  cursor: move;
+  position: absolute;
+  width:472px;
+  height: 472px;
+  left: 11% !important;
+  top:22vh !important;
+  z-index: -1;
+  pointer-events: auto;
+}
+#plantes{
+  z-index: 5;
+}
+
+#scene{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  display:flex;
+  align-items: center;
+}
+.image-enter{
+  animation-name: image-enter;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.about-enter{
+  animation-name: about-enter;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+.content-enter{
+  animation-name: text-enter;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  transition-delay: 1s;
+}
+.background{
+  transition: 1s;
+}
+
+@keyframes about-enter {
+  100%{
+    transform: scale(1) translateX(-21%) translateY(-23%);
+    box-shadow: 30px 15px var(--theme);
+  }
+}
+
+@keyframes image-enter {
+  100%{
+    transform: scale(1) translateX(-18%) translateY(-32%);
+    box-shadow: 30px 15px var(--theme);
+  }
+}
+@keyframes text-enter {
+  100%{
+    transform: translateX(10%);
+  }
+}

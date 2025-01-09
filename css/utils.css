@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --theme: #d1385a;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif, Helvetica;
+  color: white;
+  text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+  overflow-x: hidden;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #ff0099; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff0099, #493240); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff0099, #493240);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.space-color {
+  background-image: linear-gradient(to bottom, #202020, #0a0a0a, #080b0e, #020b16);
+  background-repeat: no-repeat;
+}
+
+.design-line{
+  width: 140px;
+  height: 4px;
+  display: block;
+  background-color: var(--theme);
+}
+
+.menu-btn{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+/* .menu-btn :nth-child(1){
+  transform: rotate(334deg);
+  transform-origin: right;
+}
+.menu-btn :nth-child(2){
+  transform-origin: right;
+  transform: rotate(24deg);
+} */
+
+.back-arrow {
+  position: fixed;
+  left: 0;
+  margin: 10px 0 0 10px;
+  cursor: pointer;
+  z-index: 3;
+  width: 120px;
+  transition: 100ms;
+}
+.back-arrow:hover{
+  margin-left: 5px;
+}
+.menu-btn span{
+  height: 5px;
+  width: 60px;
+  background-color: white;
+  margin: 10px 20px;
+  border-radius: 2px;
+  transition: 200ms;
+  transform-origin: right;
+}
+#mySidenav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  z-index: 3;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background: #212121;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--theme);
+  border-radius: 100vw;
+  border: .25em solid #212121
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #9ba4b3;
+}

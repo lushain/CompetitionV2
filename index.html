@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Space Science</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="/images/favicon.ico"/>
+  </head>
+
+  <body>
+    <!-- <div id="mySidenav" class="sidenav">
+  <a href="index.html#home">Home</a>
+  <a href="index.html#about">About Space Science</a>
+  <a href="index.html#space-exploration">Space Exploration</a>
+  <a href="index.html#astronomy">Astronomy</a>
+  <a href="index.html#astrobiology">Astrobiology</a>
+</div> -->
+    <header>
+      <div id="scene">
+        <img src="/images/stars4.svg" alt="" class="parallax" data-depth="0.5">
+      </div>
+      <!-- <div class="menu-btn" id="menu-btn" onclick="openNav()">
+        <span></span>
+        <span></span>
+      </div> -->
+    <nav class= "side-nav">
+      <ul>
+        <li class="scroll-icon" id="home-icon"></li>
+        <li class="scroll-icon" id="about-icon"></li>
+        <li class="scroll-icon" id="space-exploration-icon"></li>
+        <li class="scroll-icon" id="astronomy-icon"></li>
+        <li class="scroll-icon" id="astrobiology-icon"></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="content">
+        <p>Theme 1: Project 1 (Grade 9-12)</p>
+        <h1>Space Science</h1>
+        </div>
+        <div id="planets">
+          <!-- <img src="images/earth.svg" data-depth="0.2" alt="earth image" class="earth"> -->
+          <!-- <canvas id='rotatingGlobe'></canvas> -->
+          <canvas id='globe' width='500' height='500' data-depth="0.3"></canvas>
+        </div>
+        <button id="see-my-location-button" class="learn-more">See my location on the globe</button>
+      </section>
+
+      <section id="about">
+        <div class="content">
+          <h2>About Space Science</h2>
+          <span class= "design-line"></span>
+          <p>Scientists in the space sector ask questions, conduct research, and use science to better
+            understand how and why things happen in our universe. Their goal is to advance knowledge so that
+            it can be applied to technology development in many fields.
+          </p>
+          <p>Space science makes us look outwards from our planet, to the stars and beyond. It’s a subject that
+            strives to answer the ultimate questions: How did our Earth and our Solar System form and evolve? What is our
+            place in the Universe? Where are we going? Where did life come from, and are we alone?
+          </p>
+        </div>
+        <img src="/images/earth.jpg" alt="" class="back-box" id="about-img">
+      </section>
+
+      <section id="space-exploration">
+        <div class="content">
+          <h2>Space Exploration</h2>
+          <span class= "design-line"></span>
+          <p>
+            Space exploration is the use of astronomy and space technology to explore outer space.
+            While the exploration of space is carried out mainly by astronomers with telescopes,
+            its physical exploration though is conducted both by uncrewed robotic space probes and human
+            spaceflight. Space exploration, like its classical form astronomy, is one of the main sources
+            for space science.
+          </p>
+          <a href="/exp.html"><button type="button" name="button" class="learn-more">Learn More</button></a>
+      </div>
+      <img src="/images/exploration2.jpg" alt="" class="back-box animate-box">
+      </section>
+
+      <section id="astronomy">
+        <div class="content">
+          <h2>Astronomy</h2>
+          <span class= "design-line"></span>
+          <p>
+            Astronomy is a natural science that studies celestial objects and phenomena. It uses mathematics,
+            physics, and chemistry in order to explain their origin and evolution. Objects of interest include
+            planets, moons, stars, nebulae, galaxies, and comets. Relevant phenomena include supernova
+            explosions, gamma ray bursts, quasars, blazars, pulsars, and cosmic microwave background radiation.
+            More generally, astronomy studies everything that originates beyond Earth's atmosphere.
+          </p>
+          <a href="/astronomy.html"><button type="button" name="button" class="learn-more">Learn More</button></a>
+        </div>
+        <img src="/images/astronomy.jpg" alt="" class="back-box animate-box">
+      </section>
+      <section id="astrobiology">
+        <div class="content">
+          <h2>Astrobiology</h2>
+          <span class= "design-line"></span>
+          <p>
+            Astrobiology, formerly known as exobiology, is an interdisciplinary scientific field that studies
+            the origins, early evolution, distribution, and future of life in the universe. Astrobiology considers
+            the question of whether extraterrestrial life exists, and if it does, how humans can detect it.
+          </p>
+          <a href="/astrobiology.html"><button type="button" name="button" class="learn-more">Learn More</button></a>
+        </div>
+        <img src="images/astrobiology.jpg" alt="" class="back-box animate-box">
+      </section>
+      <div class="space-color fixed"></div>
+    </main>
+    <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='https://cdn.rawgit.com/BinaryMuse/planetary.js/v1.1.2/dist/planetaryjs.min.js'></script>
+    <script src="/javascript/earth.js"></script>
+    <script src="/javascript/parallax.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+      integrity="sha512-/6TZODGjYL7M8qb7P6SflJB/nTGE79ed1RfJk3dfm/Ib6JwCT4+tOfrrseEHhxkIhwG8jCl+io6eaiWLS/UX1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/javascript/main.js"></script>
+    <!-- <script src="javascript/menu.js"></script> -->
+  </body>
+</html>
